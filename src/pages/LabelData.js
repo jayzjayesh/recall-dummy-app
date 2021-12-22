@@ -73,6 +73,7 @@ const LabelData = () => {
       if (res?.data?.status_code === 200 && res?.data?.data === "Applied") {
         setIsApplying(false);
         fetchCallData();
+        fetchLabelData();
         setRemoveList([]);
         setAddList([]);
         setCallList([]);
